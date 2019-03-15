@@ -16,10 +16,8 @@ Wheel::Wheel(cv::Point p, float rad, int id) {
 
 }
 
-void Wheel::speedCalculation()
-{
+void Wheel::speedCalculation() {
     int historySize = (int) centerHistory.size();
-
 
     if (historySize == 1) {
         speed = 0;
